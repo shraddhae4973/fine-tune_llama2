@@ -7,7 +7,7 @@ This repository contains the implementation and evaluation of a specialized conv
 Key Features
 
 Fine-tuned Llama2-7B Model: Specialized adaptation for mental health therapeutic conversations
-Enhanced Conversational Engagement: 399.7% increase in question-asking behavior for deeper therapeutic dialogue
+Enhanced Conversational Engagement: 99.9% increase in question-asking behavior for deeper therapeutic dialogue
 Improved Response Quality: 82% improvement in overall helpfulness ratings
 Ethical AI Framework: Comprehensive consideration of fairness, bias, and explainability
 Human-Centered Evaluation: Validated through extensive human assessor feedback
