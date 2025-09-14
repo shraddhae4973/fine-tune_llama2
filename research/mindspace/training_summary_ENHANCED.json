@@ -1,0 +1,51 @@
+{
+  "training_config": {
+    "model": "meta-llama/Llama-2-7b-chat-hf",
+    "epochs": 15,
+    "batch_size": 6,
+    "learning_rate": 3e-05,
+    "lr_scheduler": "cosine",
+    "warmup_ratio": 0.05,
+    "weight_decay": 0.001,
+    "max_seq_length": 2048,
+    "train_samples": 2452,
+    "val_samples": 526,
+    "gradient_accumulation_steps": 4,
+    "max_grad_norm": 1.0
+  },
+  "lora_config": {
+    "lora_r": 32,
+    "lora_alpha": 64,
+    "lora_dropout": 0.1,
+    "target_modules": [
+      "q_proj",
+      "v_proj",
+      "k_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "early_stopping_config": {
+    "enabled": true,
+    "patience": 8,
+    "threshold": 0.005,
+    "overfitting_threshold": 0.2,
+    "overfitting_detection": true
+  },
+  "final_metrics": {
+    "final_train_loss": 1.1762,
+    "final_val_loss": 1.1771254539489746,
+    "final_perplexity": 3.245032786973666,
+    "best_val_loss": 1.1771254539489746,
+    "best_perplexity": 3.245032786973666
+  },
+  "early_stopping_info": {
+    "stopped_early": false,
+    "stop_reason": null,
+    "final_patience_counter": 1,
+    "total_steps_completed": 200
+  },
+  "training_date": "2025-09-09T19:31:38.256005"
+}
